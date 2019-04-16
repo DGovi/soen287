@@ -1,0 +1,17 @@
+/*text color and background color*/
+body{
+	color: mediumblue;
+	background-color: darkorange;
+}
+
+/* form */ 
+#frm{
+	width: 540px;
+}
+
+/*border*/
+
+fieldset{
+	border-color: blue;
+	margin: 10px;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="a3q5.js"></script>
+	<title> Soen 287 a3 q4</title>
+	<meta charset="utf-8">
+	<style >
+		body {
+			background-color: #1aff1a;
+		}
+		#ReservationBox {
+			background-color: #e6fffa;
+			border-color: #004d3d;
+			border-width: 5px;
+			border-style: solid;
+			}
+			#ReservationLegend{
+				color: #004d3d
+			}
+		#RoomSpec { 
+			background-color: #c6c6ec;
+			border-style: solid;
+			border-width: 5px;
+			border-color:  #19194d;
+			}
+			#roomSpecLegend{
+			color:  #19194d;
+		}
+		.reservelabel{
+			color: #00b3b3;
+			font-weight: 900;
+		}
+		.speclabel{
+			color: #3333cc;
+			font-weight: 900;
+		}
+
+		#q5{
+			color: blue;
+			font-weight: 900;
+			background-color: orange;
+			border-width: 10px
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+		<td>
+			<a href="https://media-cdn.tripadvisor.com/media/photo-s/08/20/75/0d/hotel-contessa.jpg">
+			<img src="https://media-cdn.tripadvisor.com/media/photo-s/08/20/75/0d/hotel-contessa.jpg" alt = "hotel picture" width="200">
+			</a>
+		</td>
+		<td> <h1>Hotel Reservation form </h1></td>
+		</tr>
+	</table>
+	<fieldset  id="ReservationBox">
+		<legend id="ReservationLegend"> <strong>Reservation information </strong></legend>
+		<p>
+			<label class="reservelabel">Number of people
+				<input type="text" name="ppl/room"> (max 4 people per room)
+			</label>
+		</p>
+		<p>
+			<label class="reservelabel">Smoker?</label>
+				<input type="radio" name="Smoker" > yes
+				<input type="radio" name="Smoker" checked="checked">no
+		</p>
+		<p>
+			<label class="reservelabel">Check-in date</label>
+			<input type="date" name="checkin">
+		</p>
+		<p>
+			<label class="reservelabel">Check-out date</label>
+			<input type="date" name="checkout">
+		</p>
+	</fieldset>
+	<fieldset id = "RoomSpec">
+		<legend id="roomSpecLegend">Room Specs</legend>
+		<p>
+			<ul>
+				<li>
+					<label class="speclabel"> Number of single beds/double beds respectively:</label>
+					<p>
+					<input type="checkbox" name="comboSelect">2/0
+					<input type="checkbox" name="comboSelect">0/2
+					<input type="checkbox" name="comboSelect">1/1
+					<input type="checkbox" name="comboSelect">1/2
+					<input type="checkbox" name="comboSelect">2/1
+					</p>
+				</li>
+				<li>
+					<label class="speclabel"> Location preferences?</label>
+						<p>
+							<input type="checkbox" name="locationPref"> West Island
+							<input type="checkbox" name="locationPref" value="unch" id="downtown"> Downtown
+							<input type="checkbox" name="locationPref"> Montreal Nord
+							<input type="checkbox" name="locationPref"> Concordia University
+							<input type="checkbox" name="locationPref"> Montreal East
+							<input type="checkbox" name="locationPref"> Concordia library
+						</p>
+					
+				</li>
+				<li>
+					<label class="speclabel"> Price Range per night </label>
+						<p>
+							<select id = "priceRange">
+								<option>10</option>
+								<option>50</option>
+								<option>70</option>
+								<option>100000000000</option>
+							</select>
+						</p>
+					
+				</li>
+				<li>
+					<label class="speclabel"> Number of Private Parkings</label>
+						<p><input type="radio" name="PrivateParking" checked="checked">0</p>
+						<p><input type="radio" name="PrivateParking">1</p>
+						<p><input type="radio" name="PrivateParking">2</p>
+						<p><input type="radio" name="PrivateParking">3</p>
+						<p><input type="radio" name="PrivateParking">4</p>
+					
+				</li>
+				<li>
+				<label class="speclabel">Special Facilites</label>
+				<p>
+					<input type="checkbox" name="specialFacilities"> Pool
+					<input type="checkbox" name="specialFacilities"> Golf Court
+					<input type="checkbox" name="specialFacilities"> Waterfall
+					<input type="checkbox" name="specialFacilities"> Robot service
+					<input type="checkbox" name="specialFacilities"> Free instant noodles
+					<input type="checkbox" name="specialFacilities"> Heated lobby chairs
+				</p>
+				</li>
+			</ul>
+	</fieldset>
+
+	<fieldset id="q5" hidden="true">
+		<legend> Expert Suggestion</legend>
+		<p>your budget is too low to find something nice in downtown</p>
+	</fieldset>
+
+	<p>
+		Let's see what we can find...
+	</p>
+
+	<button type="button" onclick="expertSuggestion()"> Search </button>
+	<input type="Reset" value="Start Over">
+</body>
+</html>

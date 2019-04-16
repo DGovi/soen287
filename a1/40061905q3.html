@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> Soen 287 a1 q3</title>
+</head>
+<body>
+	<h1>
+		Hotel Reservation Form
+	</h1>
+	<fieldset>
+		<legend> Reservation information </legend>
+		<p>
+			<label>Number of people
+				<input type="text" name="ppl/room"> (max 4 people per room)
+			</label>
+		</p>
+		<p>
+			<label>Smoker?</label>
+				<input type="radio" name="Smoker" > yes
+				<input type="radio" name="Smoker" checked="checked">no
+			
+		</p>
+		<p>
+			<label>Check-in date</label>
+			<input type="date" name="checkin">
+		</p>
+		<p>
+			<label>Check-out date</label>
+			<input type="date" name="checkout">
+		</p>
+	</fieldset>
+	<fieldset>
+		<legend>Room Specs</legend>
+		<p>
+			<ul>
+				<li>
+					<label> Number of single and double beds respectively:</label>
+					<p>
+					<input type="checkbox" name="comboSelect">2/0
+					<input type="checkbox" name="comboSelect">0/2
+					<input type="checkbox" name="comboSelect">1/1
+					<input type="checkbox" name="comboSelect">1/2
+					<input type="checkbox" name="comboSelect">2/1
+					</p>
+				</li>
+				<li>
+					<label> Location preferences?</label>
+						<p>
+							<input type="checkbox" name="locationPref"> West Island
+							<input type="checkbox" name="locationPref"> Downtown
+							<input type="checkbox" name="locationPref"> Montreal Nord
+							<input type="checkbox" name="locationPref"> Concordia University
+							<input type="checkbox" name="locationPref"> Montreal East
+							<input type="checkbox" name="locationPref"> Concordia library
+						</p>
+					
+				</li>
+				<li>
+					<label> Price Range per night</label>
+						<p>
+							<select>
+								<option>Free</option>
+								<option> max 10$ </option>
+								<option>max 200984596$</option>
+								<option>no limit</option>
+							</select>
+						</p>
+					
+				</li>
+				<li>
+					<label> Number of Private Parkings</label>
+						<p><input type="radio" name="PrivateParking" checked="checked">0</p>
+						<p><input type="radio" name="PrivateParking">1</p>
+						<p><input type="radio" name="PrivateParking">2</p>
+						<input type="radio" name="PrivateParking">3
+						<input type="radio" name="PrivateParking">4
+					
+				</li>
+				<li>
+				<label>Special Facilites</label>
+				<p>
+					<input type="checkbox" name="specialFacilities"> Pool
+					<input type="checkbox" name="specialFacilities"> Golf Court
+					<input type="checkbox" name="specialFacilities"> Waterfall
+					<input type="checkbox" name="specialFacilities"> Robot service
+					<input type="checkbox" name="specialFacilities"> Free instant noodles
+					<input type="checkbox" name="specialFacilities"> Heated lobby chairs
+				</p>
+				</li>
+			</ul>
+	</fieldset>
+	<p>
+		Let's see what we can find...
+	</p>
+	<input type="Submit" value="Search">
+	<input type="Reset" value="Start Over">
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A3Q1</title>
+	<script src="a3q1.js"></script>
+</head>
+<body>
+	<h1>Assignment 3 Question 1</h1>
+	Search in this text:<br/>
+	<textarea id = "textInput"cols="80" rows="10" value = ""></textarea><br/>
+	
+	<table>
+		
+		<tr>
+			<td>Split the text according to the characters:</td>
+			<td><input type="text" id="splitChar" size="20" ></td>
+		</tr>
+
+		<tr>
+			<td>Test each word with this regex:</td>
+			<td>
+				<input type="text" id="regexTest" size = "20" ><br/>
+			</td>
+		</tr>
+		<tr>
+			<td>Modifiers for the regex: </td>
+			<td>
+				<input type="text" id="regexMod" size="5"><br/>
+			</td>
+		</tr>
+	</table> 
+
+	<input type="Submit" id="searchButton" value = "Search" onclick="search()">
+
+	<input type="Reset" id="resetButton"><br/>
+
+	<p id = "newParag"></p>
+</body>
+</html>

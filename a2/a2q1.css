@@ -1,0 +1,79 @@
+	body{
+			background-size: 150px;
+		    background-image: url("pics/q1.png");
+			background-repeat: repeat;
+		}
+		div {
+  			background-color: black;
+  			width: 50%;
+  			border: 10px;
+  			padding: 10px;
+  			margin: 10px;
+  			border-style: solid;
+  			border-color: #00FFEE;
+  			color: #00FFEE;
+  			font-size: 50px;
+		}
+		table{
+			margin: 10px;
+			border: 15px;
+			border-style: dashed dotted;
+			border-color: #FFFFFF;
+		}
+		.headings{
+			background-color: red;
+			color: #4400AA;
+			padding-right: 500px;
+			padding-top: 25px;
+			padding-bottom: 25px;
+		}
+		.cell1{
+			border-style: solid;
+			border-color: #8866ff;
+			background-color: #993377;
+			padding: 25px;
+		}
+		.cell2{
+			border-style: solid;
+			border-color: #aa00aa;
+			background-color: #ffdd77;
+		}
+		.cell3{
+			border-style: solid;
+			border-color: #1133dd;
+			background-color: #0011ff;
+			padding: 25px;
+		}
+		.cell4{
+			border-style: solid;
+			border-color: #ff66ff;
+			background-color: #dd3377;
+			padding: 25px;
+		}
+		.column1{
+			list-style-type: upper-roman;
+		}
+		.oh{
+			list-style-type: upper-alpha;
+		}
+		.cell2un1{
+			list-style-image: url("pics/q1p3.jpg");
+		}
+		.cell2un2{
+			color: #aa00aa;
+		}
+		.cell4un1{
+			color: #ff66ff;
+		}
+		.cell4o{
+			list-style-type: upper-armenian;
+		}
+		.cell4un2{
+			list-style-image: url("pics/q1p2.jpg");
+		}
+		.c{
+			list-style-type: square;
+		}
+		h1,p{
+			background-color: white
+		}
